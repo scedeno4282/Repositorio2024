@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head    <link rel="stylesheet" href="Estilo.css">
+    <title>Megamaquina</title>
+>
+<body>
+    <section class="seccion">
+        <header>
+            <a href="#"><img src="/imagen/Mega.jpg" class="logo" alt="Logo" width="1000px"height="190px">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </header>
+        <div class="contenido">
+            <div class="cajaTexto">
+                <h2>Mis<br><span>productos</span></h2>
+                <p>-HAZ UN CLIENTE,NO UNA VENTA</p>
+                <a href="#">Ver todos los productos</a>
+            </div>
+            <div class="cajaImagen">
+                <img src="imagen/megaresp.jpg" class="repuesto" alt="repuesto">
+            </div>
+        </div>
+        <ul class="pulgar">
+            <li><img src="imagen/megaresp 1.jpg" onclick="deslizarImg('imagen/megaresp 1.jpg');cambiarColor('#0062be');" alt="repuesto 1"></li>
+            <li><img src="imagen/megaresp 3.jpg" onclick="deslizarImg('images/megaresp 3.jpg');cambiarColor('#e60c2c');"alt="repuesto 2"></li>
+            <li><img src="imagen/megarespues4.jpg" onclick="deslizarImg('images/megarespues4 jpg');cambiarColor('#1e1e1e');"alt="repuesto 3"></li>
+        </ul>
+        <ul class="social">
+            <li><a href="#"><img src="imagen/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="imagen/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="imagen/whatsapp.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function deslizarImg(anything) {
+            document.querySelector('.megamaquina').src = anything;
+        }
+
+        function cambiarColor(color) {
+            const seccion = document.querySelector('.seccion');
+            seccion.style.background = color;
+        }
+
+    </script>
+</body>
+</html>
